@@ -79,6 +79,17 @@ void q_short(int low, int high) {
 	q_short(j + 1, high);// step 13
 }
 
+void display() {
+	cout << endl;
+	cout << "=================================" << endl;
+	cout << "Element attay yang telah tersusun" << endl;
+	cout << "=================================" << endl;
+	for (int i = 0; i < n; i++) {
+		cout << arr[i] << " ";
+	}
+	cout << "\n\nNumber of comparasion: " << cmp_count<< endl;
+	cout << "Number of data movements: " << mov_count << endl;
+}
 
 int main()
 {
