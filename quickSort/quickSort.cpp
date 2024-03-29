@@ -10,8 +10,9 @@ int n;
 void input() {
 	while (true)
 	{
-		cout << "Masukkan banyak element pada array: ";
+		cout << "Masukkan panjang element pada array: ";
 		cin >> n;
+
 		if (n <= 20) {
 			break;
 		}
@@ -21,7 +22,6 @@ void input() {
 		}
 	}
 
-	cout << endl;
 	cout << "\n======================" << endl;
 	cout << "\nMasukkan element Array" << endl;
 	cout << "\n======================" << endl;
@@ -33,8 +33,10 @@ void input() {
 }
 
 void swap(int x, int y) {
+
 	int temp = arr[x];
 	arr[x] = arr[y];
+	arr[y] = temp;
 	mov_count++;
 }
 
@@ -108,4 +110,6 @@ int main()
 		system("pause");
 		system("cls");
 	} while (true);
+
+	return 0;
 }
